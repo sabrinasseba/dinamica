@@ -1,0 +1,5 @@
+1733248985.6117318 [INFO] [launch]: All log files can be found below /home/ros2_ws/.ros/log/2024-12-03-15-03-05-611165-sabrina-Inspiron-3501-2570
+1733248985.6118834 [INFO] [launch]: Default logging verbosity is set to INFO
+1733248985.6132035 [ERROR] [launch]: Caught exception in launch (see debug for traceback): Caught multiple exceptions when trying to load file of format [py]:
+ - InvalidPythonLaunchFileError: launch file at '/home/ros2_ws/install/robot_description/share/robot_description/launch/display.launch.py' does not contain the required function 'generate_launch_description()'
+ - InvalidFrontendLaunchFileError: The launch file may have a syntax error, or its format is unknown

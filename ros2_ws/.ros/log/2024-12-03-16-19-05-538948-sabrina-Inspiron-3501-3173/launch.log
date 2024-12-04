@@ -1,0 +1,20 @@
+1733253545.5395930 [INFO] [launch]: All log files can be found below /home/ros2_ws/.ros/log/2024-12-03-16-19-05-538948-sabrina-Inspiron-3501-3173
+1733253545.5397127 [INFO] [launch]: Default logging verbosity is set to INFO
+1733253545.6153145 [INFO] [robot_state_publisher-1]: process started with pid [3174]
+1733253545.6157804 [INFO] [joint_state_publisher-2]: process started with pid [3176]
+1733253545.6159291 [INFO] [joint_state_publisher_gui-3]: process started with pid [3178]
+1733253545.6160302 [INFO] [rviz2-4]: process started with pid [3180]
+1733253545.9173684 [joint_state_publisher-2] [INFO] [1733253545.916843689] [joint_state_publisher]: Waiting for robot_description to be published on the robot_description topic...
+1733253545.9526498 [joint_state_publisher_gui-3] QStandardPaths: wrong permissions on runtime directory /tmp/runtime-ros2_ws, 0755 instead of 0700
+1733253545.9530530 [joint_state_publisher_gui-3] QStandardPaths: wrong permissions on runtime directory /tmp/runtime-ros2_ws, 0755 instead of 0700
+1733253546.0075812 [joint_state_publisher_gui-3] [INFO] [1733253546.007288296] [joint_state_publisher_gui]: Waiting for robot_description to be published on the robot_description topic...
+1733253546.0179400 [joint_state_publisher_gui-3] [INFO] [1733253546.017670710] [joint_state_publisher_gui]: Centering
+1733253546.0455511 [joint_state_publisher_gui-3] MESA: error: Failed to query drm device.
+1733253546.0457234 [joint_state_publisher_gui-3] libGL error: glx: failed to create dri3 screen
+1733253546.0457950 [joint_state_publisher_gui-3] libGL error: failed to load driver: iris
+1733253546.0786803 [joint_state_publisher_gui-3] [INFO] [1733253546.078421463] [joint_state_publisher_gui]: Centering
+1733253849.6714497 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1733253849.6831505 [ERROR] [joint_state_publisher_gui-3]: process has died [pid 3178, exit code -2, cmd '/opt/ros/humble/lib/joint_state_publisher_gui/joint_state_publisher_gui --ros-args -r __node:=joint_state_publisher_gui'].
+1733253849.7867870 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 3174]
+1733253849.8190417 [INFO] [joint_state_publisher-2]: process has finished cleanly [pid 3176]
+1733253849.8556216 [INFO] [rviz2-4]: process has finished cleanly [pid 3180]
