@@ -21,7 +21,7 @@ Para baixar o repositório, execute o comando abaixo. Todavia, a permissão de p
 </p>
 
 ```bash
-git clone https:
+git clone https://github.com/sabrinasseba/dinamica.git
 ```
 ## Passo 2 - ROS Humble Workspace 
 
