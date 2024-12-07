@@ -1,4 +1,8 @@
-# ROS Workspace 💻
+![Imagem do WhatsApp de 2024-12-07 à(s) 16 24 12_6563bec6](https://github.com/user-attachments/assets/936c0e67-352a-479a-b908-540a19837f53)
+
+
+
+# Fury Forge Mechanics
 <p align="justify">
 
 Este repositorio conta com container docker com ROS Humble, cujo é destinado para trabalho de simulação de um atuador soldador para a matéria de Dinâmica de Sistemas Robóticos.
@@ -13,7 +17,7 @@ O que está **contido** neste repositório?
 
 <p align="justify">
 
-## Passo 1 - Clone este repositório
+## Setting Up
 
 <p align="justify">
 
