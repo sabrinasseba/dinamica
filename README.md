@@ -34,7 +34,7 @@ To download the repository execute the following command.
 </p>
 
 ```bash
-git clone https://github.com/sabrinasseba/dinamica.git
+git clone https://github.com/sabrinasseba/fury_forge.git
 ```
 
 ## Step 2 - Building Docker Container
@@ -44,7 +44,7 @@ git clone https://github.com/sabrinasseba/dinamica.git
 The following command will build the required docker image with ROS Humble distribution and some additional packages.
 </p>
 
-*Inside the "dinamica" folder on your computer.
+*Inside the "fury_forge" folder on your computer.
 
 ```bash
 docker/scripts/build.sh 
