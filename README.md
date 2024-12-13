@@ -1,135 +1,102 @@
-# ROS Workspace 💻
-<p align="justify">
-
-Este repositorio conta com container docker com ROS Noetic, me baseei no repositório criado pelo [João Pedro Baltieca Garcia](https://github.com/JPBG-USP) (@JPBG-USP), cujo é destinado para trabalho de desenvolvimento da Lisa, a robô humanoide do SEMEAR! Caso desejem, indico a leitura do repositório abaixo. 
+<p align="center">
+  <img width="400" height="400" src="https://github.com/user-attachments/assets/936c0e67-352a-479a-b908-540a19837f53">
 </p>
 
-[Lisa](https://github.com/Grupo-SEMEAR-USP/Lisa)
+# Fury Forge Mechanics
 
 <p align="justify">
 
-Continuando, ele conta com mais pacotes associados ao ROS Noetic e adaptação para o uso de GPU.  
-
-O que está **contido** neste repositório?
-* Dockerfiles para algumas distribuições ROS com as instruções de construção necessárias.
-* Scripts que tornam o docker um pouco mais fácil.
+The Fury Forge Mechanics group is responsible for developing a robotic manipulator capable of performing welds.
 </p>
 
-# Passo a Passo 🚀
-
-## Passo 1 - Instalando Git, Docker e Driver/Toolkit Container da Nvidia
-
-### GIT 🌳
-
-```bash
-sudo apt install -y git
-```
-
-### Docker 🐳
-
 <p align="justify">
-
-Para instalar o docker, indicamos seguir o tutorial oficial do Docker.
-
-Instação do Docker no Ubuntu: https://docs.docker.com/engine/install/ubuntu/
+  
+The project concept was created for the course *Dynamics of Robotic Systems*, taken at the University of São Paulo and taught by Professor [Marcelo Becker](https://www.linkedin.com/in/marcelo-becker-761bb524/). The objective of the project was to design a robotic manipulator that served a purpose chosen by the students themselves. To achieve this, we not only came up with a use case idea but also carried out the entire development of the technical areas (mechanics, electronics, and programming) as well as the business development aspect.
 </p>
 
-### Nvidia
-
-**Importante para computadores com GPU NVIDIA**: 
+# Setting Up
 
 <p align="justify">
 
-Existem instruções oficiais para instalação do CONTAINER NVIDIA TOOLKIT, para isso indico o guia de instalação oficial logo abaixo. 
+This work was made using Docker containers, and is set up with ROS 2 Humble.
+
+What is included in this repository?
+* Dockerfile with the required build instructions.
+* Scripts that make docker easier to use.
+* Description files for the manipulator.
+* Launch files to run the simulation.
+
 </p>
 
-[Nvidia Container](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
+## Step 1 - Cloning the git repository
 
-<p align="justify">
-
-Entretanto, estamos desenvolvendo um script para instalação dos drivers de placas e o toolkit container da nvidia mais atualizado. Todavia, temos disponível dois script's para instalação tanto do driver da nvidia, como o toolkit container nvidia. Este foi elaborado pelo [Lucas Maggi](https://github.com/lomcin) (@lomcin), indico a leitura do repositório a seguir, estou me baseando nele para construir um focado para o trabalho desenvolvido neste projeto.
-</p>
-
-[Linux Stuffs](https://github.com/lomcin/linux-stuffs/tree/master?tab=readme-ov-file#nvidia). 
-
-<p align="justify">
-
-Portanto, caso tenha problema com o driver e toolkit container da nvidia, execute os scripts abaixo elaborados pelo @lomcin. 
-</p>
-
-Driver's da Nvidia:
-
-```bash
-./install/nvidia/drivers.sh
-```
-
-Tookit container da Nvidia:
-
-```bash
-./install/nvidia/container_toolkit.sh
-```
-
-## Passo 2 - Clone este repositório
-
-<p align="justify">
-
-Para baixar o repositório, execute o comando abaixo. Todavia, a permissão de push na main está bloqueada, logo indicamos que execute um fork do repositório para o seu repositório. O botam fica no começo da página. 
+To download the repository execute the following command.
 </p>
 
 ```bash
-git clone https://github.com/EESC-LabRoM/ROS.git
+git clone https://github.com/sabrinasseba/fury_forge.git
 ```
-## Passo 3 - ROS Noetic Workspace 
+
+## Step 2 - Building Docker Container
 
 <p align="justify">
 
-O comando a seguir construirá a imagem docker necessária com imagem noetic com alguns pacotes.
+The following command will build the required docker image with ROS Humble distribution and some additional packages.
 </p>
+
+*Inside the "fury_forge" folder on your computer.
 
 ```bash
 docker/scripts/build.sh 
 ```
 
-## Passo 4 - Versão completa do ROS Noetic (Ubuntu 20.04)
+## Step 3 - Running Docker Container
 
 <p align="justify">
 
-O comando baixo, via o script **run.sh**, execuratá a imagem desejada, no caso da ROS Noetic, e iniciará o container com o ROS Noetic funcional, pronto para ser utilizado. 
+The command bellow, using the script **run.sh**, will execute the desired image and inicialize the container with a working ROS, ready to use.
 </p>
 
 ```bash
 docker/scripts/run.sh
 ```
+
+## Step 4 - Setting up ROS Workspace
+
 <p align="justify">
 
-Para executar os comandos dos ROS, é necessário entrar na pasta **ros_ws**, para isso, digite o comando abaixo.
+To build your workspace it is necessary to execute the commands bellow.
+
+*Already inside the container.
+
+```
+colcon build
+```
+```
+source install/setup.bash
+```
+## Step 5 - Runnig the simulation
+
+<p align="justify">
+
+To run the ROS simulation, you need to navigate to the package **robot_description**. To do so, write the command bellow.
 </p>
 
-```bash
-cd home/ROS/ros_ws
+```
+cd robot_description
 ```
 <p align="justify">
 
-Assim, você estará na pasta que contém os pastas **src**, **devel** e **build**. Dentro da pasta é possível constroir o workspace, basta executar o comando abaixo. 
+This will take you to the package containing the **config**, **launch**, **meshes**, **rviz2**, and **urdf** folders. Inside this directory, you can review the construction of the xacro/urdf files, launch files, and the meshes used.
 </p>
 
-```bash
-catkin_make
+<p align="justify">
+
+To run the simulation on Rviz of the manipulator, just go back to your initial directory and use the following command.
+
 ```
-
-## Passo 5 - Executando o Container ROS no VsCode
-
-<p align="justify">
-
-Para utilizar o Container configurado, basta usar a extensão **Dev-Container**, na primeira vez que executarem, provavelmente pedirá para vocês instalaram, para isso basta escolhe-la. Após instalada, é só seguir o vídeo abaixo.
-</p>
-
-<p align="justify">
-
-**Obs.:** Na primeira vez que executarem, ele pedirá que escolha uma pasta, escolha entre **home** ou **ROS**. Assim, você terá acesso aos arquivos do container, mas caso deseje mudar, é só trocar a pasta. 
-</p>
-
-https://github.com/EESC-LabRoM/ROS/assets/72418094/ff51505a-8547-4b7a-a35c-55829209abb8
+ros2 launch robot_description display.launch.py
+```
 
 
 
