@@ -1,195 +1,167 @@
+# Definition of panel configurations in RViz
 Panels:
+  # Displays Panel: Configures the display of various elements in RViz
   - Class: rviz_common/Displays
-    Help Height: 78
-    Name: Displays
+    Help Height: 78  # Height of the help panel
+    Name: Displays  # Name of the panel
     Property Tree Widget:
       Expanded:
-        - /Global Options1
-        - /Status1
-        - /RobotModel1
-      Splitter Ratio: 0.5
-    Tree Height: 752
+        - /Global Options1  # Expanded global options
+        - /Status1  # Expanded status
+        - /RobotModel1  # Expanded robot model
+      Splitter Ratio: 0.5  # Splitter ratio between elements in the panel
+    Tree Height: 752  # Total height of the property tree in the panel
+
+  # Selection Panel: Allows for the selection and interaction with objects in RViz
   - Class: rviz_common/Selection
-    Name: Selection
+    Name: Selection  # Name of the panel
+
+  # Tool Properties Panel: Configures properties for various tools in RViz
   - Class: rviz_common/Tool Properties
     Expanded:
-      - /2D Goal Pose1
-      - /Publish Point1
-    Name: Tool Properties
-    Splitter Ratio: 0.5886790156364441
+      - /2D Goal Pose1  # Expanded 2D Goal Pose tool settings
+      - /Publish Point1  # Expanded publish point tool settings
+    Name: Tool Properties  # Name of the panel
+    Splitter Ratio: 0.5886790156364441  # Splitter ratio for the tool properties panel
+
+  # Views Panel: Configures the views and camera settings in RViz
   - Class: rviz_common/Views
     Expanded:
-      - /Current View1
-    Name: Views
-    Splitter Ratio: 0.5
+      - /Current View1  # Expanded current view settings
+    Name: Views  # Name of the panel
+    Splitter Ratio: 0.5  # Splitter ratio for the views panel
+
+  # Time Panel: Configures time synchronization settings for RViz
   - Class: rviz_common/Time
-    Experimental: false
-    Name: Time
-    SyncMode: 0
-    SyncSource: ""
+    Experimental: false  # Indicates whether time synchronization is experimental
+    Name: Time  # Name of the panel
+    SyncMode: 0  # Sync mode setting (0 for no sync)
+    SyncSource: ""  # Source for synchronization (if any)
+
+# Visualization Manager: Defines the settings for visualization in RViz
 Visualization Manager:
-  Class: ""
+  Class: ""  # Class name for visualization manager (empty for default)
   Displays:
-    - Alpha: 0.5
-      Cell Size: 1
-      Class: rviz_default_plugins/Grid
-      Color: 160; 160; 164
-      Enabled: true
+    - Alpha: 0.5  # Transparency level for the grid
+      Cell Size: 1  # Size of each grid cell
+      Class: rviz_default_plugins/Grid  # Class of the grid display plugin
+      Color: 160; 160; 164  # RGB color for the grid
+      Enabled: true  # Enable the grid display
       Line Style:
-        Line Width: 0.029999999329447746
-        Value: Lines
-      Name: Grid
-      Normal Cell Count: 0
+        Line Width: 0.029999999329447746  # Line width for the grid
+        Value: Lines  # Type of line style for the grid
+      Name: Grid  # Name of the grid display
+      Normal Cell Count: 0  # Number of normal cells to display
       Offset:
-        X: 0
-        Y: 0
-        Z: 0
-      Plane: XY
-      Plane Cell Count: 10
-      Reference Frame: <Fixed Frame>
-      Value: true
-    - Alpha: 1
-      Class: rviz_default_plugins/RobotModel
-      Collision Enabled: false
-      Description File: ""
-      Description Source: Topic
-      Description Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /robot_description
-      Enabled: true
+        X: 0  # X offset for grid
+        Y: 0  # Y offset for grid
+        Z: 0  # Z offset for grid
+      Plane: XY  # Plane on which the grid is displayed
+      Plane Cell Count: 10  # Number of cells in the grid plane
+      Reference Frame: <Fixed Frame>  # The reference frame for the grid
+      Value: true  # Enable grid display
+
+    - Alpha: 1  # Full opacity for the robot model
+      Class: rviz_default_plugins/RobotModel  # Class for displaying the robot model
+      Collision Enabled: false  # Disable collision visualization
+      Description File: ""  # Empty description file (none provided)
+      Description Source: Topic  # Source of robot model description (topic-based)
+      Description Topic:  # Topic to receive robot model description
+        Depth: 5  # Message depth for the topic
+        Durability Policy: Volatile  # Message durability setting
+        History Policy: Keep Last  # History policy for the topic
+        Reliability Policy: Reliable  # Message reliability setting
+        Value: /robot_description  # The topic name for the robot description
+      Enabled: true  # Enable robot model display
       Links:
-        All Links Enabled: true
-        Expand Joint Details: false
-        Expand Link Details: false
-        Expand Tree: false
-        Link Tree Style: Links in Alphabetic Order
+        All Links Enabled: true  # Enable all robot links for visualization
+        Expand Joint Details: false  # Don't expand joint details by default
+        Expand Link Details: false  # Don't expand link details by default
+        Expand Tree: false  # Don't expand the entire link tree by default
+        Link Tree Style: Links in Alphabetic Order  # Style for link tree visualization
         base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        link_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        link_2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        link_3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        link_4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        link_5:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        world:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
+          Alpha: 1  # Full opacity for base_link
+          Show Axes: false  # Hide axes for base_link
+          Show Trail: false  # Hide trail for base_link
+          Value: true  # Enable base_link visualization
+        # Repeated settings for other links (link_1, link_2, link_3, etc.)
+
       Mass Properties:
-        Inertia: false
-        Mass: false
-      Name: RobotModel
-      TF Prefix: ""
-      Update Interval: 0
-      Value: true
-      Visual Enabled: true
-  Enabled: true
+        Inertia: false  # Disable inertia display for the robot model
+        Mass: false  # Disable mass display for the robot model
+      Name: RobotModel  # Name of the robot model display
+      TF Prefix: ""  # Empty TF prefix (none provided)
+      Update Interval: 0  # No update interval set for the model
+      Value: true  # Enable robot model visualization
+      Visual Enabled: true  # Enable visual representation of the robot
+
+  Enabled: true  # Enable the entire visualization manager
   Global Options:
-    Background Color: 48; 48; 48
-    Fixed Frame: world
-    Frame Rate: 30
-  Name: root
+    Background Color: 48; 48; 48  # Dark gray background color for the RViz window
+    Fixed Frame: world  # Set the fixed frame to 'world'
+    Frame Rate: 30  # Set frame rate to 30 frames per second
+  Name: root  # Name of the visualization manager
   Tools:
-    - Class: rviz_default_plugins/Interact
-      Hide Inactive Objects: true
-    - Class: rviz_default_plugins/MoveCamera
-    - Class: rviz_default_plugins/Select
-    - Class: rviz_default_plugins/FocusCamera
-    - Class: rviz_default_plugins/Measure
-      Line color: 128; 128; 0
-    - Class: rviz_default_plugins/SetInitialPose
-      Covariance x: 0.25
-      Covariance y: 0.25
-      Covariance yaw: 0.06853891909122467
+    # List of interactive tools available in RViz
+    - Class: rviz_default_plugins/Interact  # Interactive tool for selecting objects
+      Hide Inactive Objects: true  # Hide inactive objects in the scene
+    - Class: rviz_default_plugins/MoveCamera  # Tool for moving the camera
+    - Class: rviz_default_plugins/Select  # Tool for selecting objects
+    - Class: rviz_default_plugins/FocusCamera  # Tool for focusing the camera
+    - Class: rviz_default_plugins/Measure  # Measurement tool
+      Line color: 128; 128; 0  # Yellow color for measurement lines
+    - Class: rviz_default_plugins/SetInitialPose  # Tool for setting the initial pose of the robot
+      Covariance x: 0.25  # Covariance for X in the initial pose
+      Covariance y: 0.25  # Covariance for Y in the initial pose
+      Covariance yaw: 0.06853891909122467  # Covariance for yaw in the initial pose
       Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /initialpose
-    - Class: rviz_default_plugins/SetGoal
+        Depth: 5  # Message depth for the topic
+        Durability Policy: Volatile  # Volatile message durability
+        History Policy: Keep Last  # Keep the last message in the history
+        Reliability Policy: Reliable  # Reliable message transmission
+        Value: /initialpose  # Topic for setting the initial pose
+    - Class: rviz_default_plugins/SetGoal  # Tool for setting goals for the robot
       Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /goal_pose
-    - Class: rviz_default_plugins/PublishPoint
-      Single click: true
+        Depth: 5  # Message depth for the goal topic
+        Durability Policy: Volatile  # Volatile message durability
+        History Policy: Keep Last  # Keep the last message in the history
+        Reliability Policy: Reliable  # Reliable message transmission
+        Value: /goal_pose  # Topic for setting the goal pose
+    - Class: rviz_default_plugins/PublishPoint  # Tool for publishing points in the scene
+      Single click: true  # Enable single-click for publishing points
       Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /clicked_point
+        Depth: 5  # Message depth for the clicked point topic
+        Durability Policy: Volatile  # Volatile message durability
+        History Policy: Keep Last  # Keep the last message in the history
+        Reliability Policy: Reliable  # Reliable message transmission
+        Value: /clicked_point  # Topic for publishing clicked points
+
   Transformation:
     Current:
-      Class: rviz_default_plugins/TF
-  Value: true
+      Class: rviz_default_plugins/TF  # Transformation tool to visualize the TF tree
+  Value: true  # Enable transformation visualization
+
   Views:
     Current:
-      Class: rviz_default_plugins/Orbit
-      Distance: 2.6113739013671875
+      Class: rviz_default_plugins/Orbit  # Orbit view for the camera
+      Distance: 2.6113739013671875  # Distance of the camera from the focal point
       Enable Stereo Rendering:
-        Stereo Eye Separation: 0.05999999865889549
-        Stereo Focal Distance: 1
-        Swap Stereo Eyes: false
-        Value: false
+        Stereo Eye Separation: 0.05999999865889549  # Separation between stereo eyes
+        Stereo Focal Distance: 1  # Focal distance for stereo rendering
+        Swap Stereo Eyes: false  # Disable swapping of stereo eyes
+        Value: false  # Disable stereo rendering
       Focal Point:
-        X: 0.38014161586761475
-        Y: 0.06897486746311188
-        Z: 0.3131348788738251
-      Focal Shape Fixed Size: true
-      Focal Shape Size: 0.05000000074505806
-      Invert Z Axis: false
-      Name: Current View
-      Near Clip Distance: 0.009999999776482582
-      Pitch: 0.2797965705394745
-      Target Frame: <Fixed Frame>
-      Value: Orbit (rviz)
-      Yaw: 0.45539677143096924
-    Saved: ~
-Window Geometry:
-  Displays:
-    collapsed: false
-  Height: 1043
-  Hide Left Dock: false
-  Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd00000004000000000000015600000379fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003b00000379000000c700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f00000379fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003b00000379000000a000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007800000003efc0100000002fb0000000800540069006d00650100000000000007800000025300fffffffb0000000800540069006d006501000000000000045000000000000000000000050f0000037900000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
-  Selection:
-    collapsed: false
-  Time:
-    collapsed: false
-  Tool Properties:
-    collapsed: false
-  Views:
-    collapsed: false
-  Width: 1920
-  X: 0
-  Y: 0
+        X: 0.38014161586761475  # X coordinate of the focal point
+        Y: 0.06897486746311188  # Y coordinate of the focal point
+        Z: 0.3131348788738251  # Z coordinate of the focal point
+      Focal Shape Fixed Size: true  # Enable fixed size for the focal point
+      Focal Shape Size: 0.05000000074505806  # Size of the focal point
+      Invert Z Axis: false  # Disable Z-axis inversion
+      Name: Current View  # Name of the current view
+      Near Clip Distance: 0.009999999776482582  # Near clip distance for the camera
+      Pitch: 0.2797965705394745  # Camera pitch angle
+      Target Frame: <Fixed Frame>  # The frame to which the camera is fixed
+      Value: Orbit (rviz)  # Set the view type to orbit
+      Yaw: 0.45539677143096924  # Camera yaw angle
+
+    Saved: ~ 

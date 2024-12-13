@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!-- https://wiki.ros.org/urdf/XML/link -->
 
-<robot name = "robo_teste">
+<robot name = "soldador">
 
     <!-- Definindo Cores -->
     <material name="red">
