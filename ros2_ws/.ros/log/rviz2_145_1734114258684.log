@@ -277,4 +277,16 @@
 [ERROR] [1734115771.125754022] [rviz2]: Error retrieving file [package://manipulator3/meshes/horizontal2.stl]: Package [manipulator3] does not exist
 [ERROR] [1734115771.125776679] [rviz2]: Error retrieving file [package://manipulator3/meshes/horizontal2.stl]: Package [manipulator3] does not exist
 [ERROR] [1734115771.125802200] [rviz2]: Error retrieving file [package://manipulator3/meshes/horizontal2.stl]: Package [manipulator3] does not exist
-[ERROR] [1734115771.125892955] [rviz2]: Error retrieving file [package://manipulator3/meshes/redonda.stl]: Package [manipulator3] does n
+[ERROR] [1734115771.125892955] [rviz2]: Error retrieving file [package://manipulator3/meshes/redonda.stl]: Package [manipulator3] does not exist
+[ERROR] [1734115771.125979048] [rviz2]: Error retrieving file [package://manipulator3/meshes/redonda.stl]: Package [manipulator3] does not exist
+[ERROR] [1734115771.126007787] [rviz2]: Error retrieving file [package://manipulator3/meshes/redonda.stl]: Package [manipulator3] does not exist
+[ERROR] [1734115771.126034296] [rviz2]: Error retrieving file [package://manipulator3/meshes/redonda.stl]: Package [manipulator3] does not exist
+[ERROR] [1734115771.126123389] [rviz2]: Error retrieving file [package://manipulator3/meshes/vertical1.stl]: Package [manipulator3] does not exist
+[ERROR] [1734115771.126167269] [rviz2]: Error retrieving file [package://manipulator3/meshes/vertical1.stl]: Package [manipulator3] does not exist
+[ERROR] [1734115771.126197909] [rviz2]: Error retrieving file [package://manipulator3/meshes/vertical1.stl]: Package [manipulator3] does not exist
+[ERROR] [1734115771.126224023] [rviz2]: Error retrieving file [package://manipulator3/meshes/vertical1.stl]: Package [manipulator3] does not exist
+[ERROR] [1734115771.126310766] [rviz2]: Error retrieving file [package://manipulator3/meshes/vertical2.stl]: Package [manipulator3] does not exist
+[ERROR] [1734115771.126354037] [rviz2]: Error retrieving file [package://manipulator3/meshes/vertical2.stl]: Package [manipulator3] does not exist
+[ERROR] [1734115771.126388011] [rviz2]: Error retrieving file [package://manipulator3/meshes/vertical2.stl]: Package [manipulator3] does not exist
+[ERROR] [1734115771.126422777] [rviz2]: Error retrieving file [package://manipulator3/meshes/vertical2.stl]: Package [manipulator3] does not exist
+[INFO] [1734116322.587076430] [rclcpp]: signal_handler(signum=2)

@@ -22,3 +22,8 @@
 1734115431.7655480 [joint_state_publisher_gui-3] [INFO] [1734115431.765259006] [joint_state_publisher_gui]: Centering
 1734115690.8570697 [joint_state_publisher_gui-3] [INFO] [1734115690.856576184] [joint_state_publisher_gui]: Centering
 1734115771.4515321 [joint_state_publisher_gui-3] [INFO] [1734115771.450172104] [joint_state_publisher_gui]: Centering
+1734116322.5887830 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1734116322.6142375 [ERROR] [joint_state_publisher_gui-3]: process has died [pid 143, exit code -2, cmd '/opt/ros/humble/lib/joint_state_publisher_gui/joint_state_publisher_gui --ros-args -r __node:=joint_state_publisher_gui'].
+1734116322.7218058 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 139]
+1734116322.8378987 [INFO] [joint_state_publisher-2]: process has finished cleanly [pid 141]
+1734116322.8979251 [INFO] [rviz2-4]: process has finished cleanly [pid 145]

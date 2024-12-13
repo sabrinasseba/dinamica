@@ -23,7 +23,10 @@
     <material name="cyan">
         <color rgba="0 1 1 1"/>
     </material>
-
+    
+    <material name="silver">
+        <color rgba="0.700 0.700 0.700 1.000"/>
+    </material>
 
     <link name="world">
         <visual>
@@ -37,106 +40,35 @@
 
     <joint name="joint_0" type="fixed">
         <parent link="world"/>
-        <child link="base_link"/>
+        <child link="base"/>
         <origin xyz="0 0 0.23" rpy="0 0 0"/>        
     </joint>
 
-    <link name="base_link">
+    <link name="base">
         <visual>
             <geometry>
-                <mesh filename="package://robot_description/meshes/base_link.STL"/>
+                <mesh filename="package://robot_description/meshes/Base.stl"/>
             </geometry>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-            <material name="green"/>
+            <origin xyz="0 0 0" rpy="3.1416 0 0"/>
+            <material name="silver"/>
         </visual>
     </link>
 
-    <joint name="joint_1" type="revolute">
-        <parent link="base_link"/>
-        <child link="link_1"/>
-        <origin xyz="-0.12618 0 0.31169" rpy="-1.5708 0 1.3815"/>
-        <axis xyz="0 1 0"/>
-        <limit effort="1000" velocity="0.5" lower="-3.141593" upper="3.141593"/>        
+    <joint name="joint_1" type="fixed">
+        <parent link="base"/>
+        <child link="estrutura1"/>
+        <origin xyz="0 0 0.23" rpy="0 0 0"/>        
     </joint>
 
-    <link name="link_1">
+    <link name="estrutura1">
         <visual>
             <geometry>
-                <mesh filename="package://robot_description/meshes/link_1.STL"/>
+                <mesh filename="package://robot_description/meshes/Estrutura1.stl"/>
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0"/>
-            <material name="yellow"/>
+            <material name="silver"/>
         </visual>
     </link>
 
-    <joint name="joint_2" type="revolute">
-        <parent link="link_1"/>
-        <child link="link_2"/>
-        <origin xyz="-0.14641 -0.08128 0" rpy="3.0346 0 0"/>
-        <axis xyz="1 0 0"/>
-        <limit effort="1000" velocity="0.5" lower="-1.5707" upper="1.5707"/>        
-    </joint>
-
-    <link name="link_2">
-        <visual>
-            <geometry>
-                <mesh filename="package://robot_description/meshes/link_2.STL"/>
-            </geometry>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-            <material name="red"/>
-        </visual>
-    </link>
-
-    <joint name="joint_3" type="revolute">
-        <parent link="link_2"/>
-        <child link="link_3"/>
-        <origin xyz="0 0 0.4318" rpy="-2.6879 0 -3.1416"/>
-        <axis xyz="1 0 0"/>
-        <limit effort="1000" velocity="0.5" lower="-1.5707" upper="1.5707"/>        
-    </joint>
-
-    <link name="link_3">
-        <visual>
-            <geometry>
-                <mesh filename="package://robot_description/meshes/link_3.STL"/>
-            </geometry>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-            <material name="red"/>
-        </visual>
-    </link>
-
-    <joint name="joint_4" type="fixed">
-        <parent link="link_3"/>
-        <child link="link_4"/>
-        <origin xyz="-0.016872 -0.39296 0" rpy="3.1416 -1.2686 3.1416"/>      
-    </joint>
-
-    <link name="link_4">
-        <visual>
-            <geometry>
-                <mesh filename="package://robot_description/meshes/link_4.STL"/>
-            </geometry>
-            <origin rpy="0 0 0" xyz="0 0 0"/>
-            <material name="yellow"/>
-        </visual>
-    </link>
-
-    <joint name="joint_5" type="revolute">
-        <parent link="link_4"/>
-        <child link="link_5"/>
-        <origin xyz="0 -0.039129 0" rpy="1.4855 1.5708 0"/>
-        <axis xyz="1 0 0"/>
-        <limit effort="1000" velocity="0.5" lower="-1.5707" upper="1.5707"/>        
-    </joint>
-
-    <link name="link_5">
-        <visual>
-            <geometry>
-                <mesh filename="package://robot_description/meshes/link_5.STL"/>
-            </geometry>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-            <material name="yellow"/>
-        </visual>
-    </link>
 
 </robot>
