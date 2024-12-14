@@ -33,7 +33,7 @@ What is included in this repository?
 To download the repository execute the following command.
 </p>
 
-```bash
+```
 git clone https://github.com/sabrinasseba/fury_forge.git
 ```
 
@@ -46,8 +46,8 @@ The following command will build the required docker image with ROS Humble distr
 
 *Inside the "fury_forge" folder on your computer.
 
-```bash
-docker/scripts/build.sh 
+```
+bash docker/scripts/build.sh 
 ```
 
 ## Step 3 - Running Docker Container
@@ -57,8 +57,8 @@ docker/scripts/build.sh
 The command bellow, using the script **run.sh**, will execute the desired image and inicialize the container with a working ROS, ready to use.
 </p>
 
-```bash
-docker/scripts/run.sh
+```
+bash docker/scripts/run.sh
 ```
 
 ## Step 4 - Setting up ROS Workspace
