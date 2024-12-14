@@ -1,0 +1,58 @@
+[0.000000] (-) TimerEvent: {}
+[0.000480] (robot_description) JobQueued: {'identifier': 'robot_description', 'dependencies': OrderedDict()}
+[0.000640] (robot_description) JobStarted: {'identifier': 'robot_description'}
+[0.008325] (robot_description) JobProgress: {'identifier': 'robot_description', 'progress': 'cmake'}
+[0.008856] (robot_description) JobProgress: {'identifier': 'robot_description', 'progress': 'build'}
+[0.009504] (robot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros2_ws/build/robot_description', '--', '-j8', '-l8'], 'cwd': '/home/ros2_ws/build/robot_description', 'env': OrderedDict([('HOSTNAME', 'sabrina-Inspiron-3501'), ('ROS_PACKAGE_PATH', '/ros_ws/src/robot_description:/ros_ws/src/robot_description:'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2_ws'), ('OLDPWD', '/home/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-ros2_ws'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/ros2_ws/install/robot_description:/opt/ros/humble'), ('PWD', '/home/ros2_ws/build/robot_description'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Sao_Paulo'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ros2_ws/install/robot_description:/opt/ros/humble')]), 'shell': False}
+[0.043065] (robot_description) CommandEnded: {'returncode': 0}
+[0.059742] (robot_description) JobProgress: {'identifier': 'robot_description', 'progress': 'install'}
+[0.066581] (robot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros2_ws/build/robot_description'], 'cwd': '/home/ros2_ws/build/robot_description', 'env': OrderedDict([('HOSTNAME', 'sabrina-Inspiron-3501'), ('ROS_PACKAGE_PATH', '/ros_ws/src/robot_description:/ros_ws/src/robot_description:'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2_ws'), ('OLDPWD', '/home/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/home/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/runtime-ros2_ws'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/home/ros2_ws/install/robot_description:/opt/ros/humble'), ('PWD', '/home/ros2_ws/build/robot_description'), ('LC_ALL', 'C.UTF-8'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'America/Sao_Paulo'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ros2_ws/install/robot_description:/opt/ros/humble')]), 'shell': False}
+[0.075567] (robot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.075775] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/launch\n'}
+[0.075843] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/launch/gazebo.launch.py\n'}
+[0.075901] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/launch/display.launch.py\n'}
+[0.075964] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/urdf\n'}
+[0.076067] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/urdf/gazebo.xacro\n'}
+[0.076126] (robot_description) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/robot_description/share/robot_description/urdf/robot_description.xacro\n'}
+[0.076184] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/urdf/soldador.control.xacro\n'}
+[0.076242] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/urdf/robot_description.urdf\n'}
+[0.076344] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/urdf/soldador.trans\n'}
+[0.076408] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/config\n'}
+[0.076466] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/config/link2_inertia.yaml\n'}
+[0.076525] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/config/controllers.yaml\n'}
+[0.076582] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes\n'}
+[0.076639] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Base.stl\n'}
+[0.076771] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes/FusoDeRosca.stl\n'}
+[0.076834] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Motor1.stl\n'}
+[0.076892] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Estrutura2.stl\n'}
+[0.076949] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Motor2.stl\n'}
+[0.077007] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Bucha2.stl\n'}
+[0.077065] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Estrutura3.stl\n'}
+[0.077123] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Asm1.stl\n'}
+[0.077182] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Bucha1.stl\n'}
+[0.077240] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes/TampaLinkP.stl\n'}
+[0.077310] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Estrutura1.stl\n'}
+[0.077372] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Engrenagem1.stl\n'}
+[0.077506] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes/TampaLink2.stl\n'}
+[0.077567] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Engrenagem2.stl\n'}
+[0.077626] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/rviz2\n'}
+[0.077684] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/rviz2/display.rviz\n'}
+[0.077743] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description\n'}
+[0.077853] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description\n'}
+[0.077909] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.sh\n'}
+[0.077968] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.dsv\n'}
+[0.078026] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/environment/path.sh\n'}
+[0.078086] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/environment/path.dsv\n'}
+[0.078126] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/local_setup.bash\n'}
+[0.078166] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/local_setup.sh\n'}
+[0.078206] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/local_setup.zsh\n'}
+[0.078246] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/local_setup.dsv\n'}
+[0.078294] (robot_description) StdoutLine: {'line': b'-- Installing: /home/ros2_ws/install/robot_description/share/robot_description/package.dsv\n'}
+[0.078340] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/ament_index/resource_index/packages/robot_description\n'}
+[0.078436] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake\n'}
+[0.078482] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake\n'}
+[0.078526] (robot_description) StdoutLine: {'line': b'-- Up-to-date: /home/ros2_ws/install/robot_description/share/robot_description/package.xml\n'}
+[0.079113] (robot_description) CommandEnded: {'returncode': 0}
+[0.099685] (-) TimerEvent: {}
+[0.113703] (robot_description) JobEnded: {'identifier': 'robot_description', 'rc': 0}
+[0.114307] (-) EventReactorShutdown: {}

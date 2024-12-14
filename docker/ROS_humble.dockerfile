@@ -39,10 +39,16 @@ RUN apt-get update && apt-get install -y \
     git-all ripgrep \
     # URDF (Universal Robot Description Format)
     ros-humble-robot-state-publisher \
-    ros-humble-joint-state-publisher \
     ros-humble-joint-state-publisher-gui \
     ros-humble-xacro \
     ros-humble-rviz2 \
+    ros-humble-gazebo-ros-pkgs \
+    ros-humble-moveit* \
+    ros-humble-ros-gz-* \
+    ros-humble-tf2-ros \
+    ros-humble-tf-transformations \
+    ros-humble-ros2-control \
+    ros-humble-ros2-controllers \
     && rm -rf /var/lib/apt/lists/*
 
 # Cria o diretório para o workspace ROS e ajusta a propriedade

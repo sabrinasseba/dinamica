@@ -1,0 +1,74 @@
+[0.009s] Invoking command in '/home/ros2_ws/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ros2_ws/src/robot_description -DCMAKE_INSTALL_PREFIX=/home/ros2_ws/install/robot_description
+[0.152s] -- The C compiler identification is GNU 11.4.0
+[0.268s] -- The CXX compiler identification is GNU 11.4.0
+[0.278s] -- Detecting C compiler ABI info
+[0.347s] -- Detecting C compiler ABI info - done
+[0.354s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.355s] -- Detecting C compile features
+[0.355s] -- Detecting C compile features - done
+[0.359s] -- Detecting CXX compiler ABI info
+[0.425s] -- Detecting CXX compiler ABI info - done
+[0.431s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.431s] -- Detecting CXX compile features
+[0.432s] -- Detecting CXX compile features - done
+[0.445s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.589s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.679s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[0.683s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[0.745s] -- Found rviz2: 11.2.14 (/opt/ros/humble/share/rviz2/cmake)
+[0.747s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.814s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.814s] -- Added test 'lint_cmake' to check CMake code style
+[0.815s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.817s] -- Added test 'xmllint' to check XML markup files
+[0.818s] -- Configuring done
+[0.820s] -- Generating done
+[0.821s] -- Build files have been written to: /home/ros2_ws/build/robot_description
+[0.825s] Invoked command in '/home/ros2_ws/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ros2_ws/src/robot_description -DCMAKE_INSTALL_PREFIX=/home/ros2_ws/install/robot_description
+[0.826s] Invoking command in '/home/ros2_ws/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros2_ws/build/robot_description -- -j8 -l8
+[0.856s] Invoked command in '/home/ros2_ws/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros2_ws/build/robot_description -- -j8 -l8
+[0.886s] Invoking command in '/home/ros2_ws/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros2_ws/build/robot_description
+[0.893s] -- Install configuration: ""
+[0.893s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/launch
+[0.893s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/launch/gazebo.launch.py
+[0.894s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/launch/display.launch.py
+[0.894s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/urdf
+[0.894s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/urdf/robot_description.xacro
+[0.894s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/urdf/robot_description.urdf
+[0.894s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/urdf/gazebo.gazebo
+[0.894s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/config
+[0.894s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/config/link2_inertia.yaml
+[0.895s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/config/controllers.yaml
+[0.895s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes
+[0.895s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Base.stl
+[0.896s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes/FusoDeRosca.stl
+[0.897s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Motor1.stl
+[0.898s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Estrutura2.stl
+[0.899s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Motor2.stl
+[0.900s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Bucha2.stl
+[0.901s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Estrutura3.stl
+[0.901s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Asm1.stl
+[0.905s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Bucha1.stl
+[0.906s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes/TampaLinkP.stl
+[0.906s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Estrutura1.stl
+[0.907s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Engrenagem1.stl
+[0.907s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes/TampaLink2.stl
+[0.908s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/meshes/Engrenagem2.stl
+[0.908s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/rviz2
+[0.908s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/rviz2/display.rviz
+[0.909s] -- Installing: /home/ros2_ws/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
+[0.909s] -- Installing: /home/ros2_ws/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description
+[0.909s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.sh
+[0.909s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.dsv
+[0.909s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/environment/path.sh
+[0.909s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/environment/path.dsv
+[0.909s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/local_setup.bash
+[0.910s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/local_setup.sh
+[0.910s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/local_setup.zsh
+[0.910s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/local_setup.dsv
+[0.910s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/package.dsv
+[0.910s] -- Installing: /home/ros2_ws/install/robot_description/share/ament_index/resource_index/packages/robot_description
+[0.910s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake
+[0.910s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake
+[0.910s] -- Installing: /home/ros2_ws/install/robot_description/share/robot_description/package.xml
+[0.912s] Invoked command in '/home/ros2_ws/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros2_ws/build/robot_description
