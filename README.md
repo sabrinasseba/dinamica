@@ -75,7 +75,7 @@ colcon build
 ```
 source install/setup.bash
 ```
-## Step 5 - Runnig the simulation
+## Step 5 - Running the simulation
 
 <p align="justify">
 
